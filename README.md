@@ -18,3 +18,19 @@ What was learned in this process ?
 => How to use the traceable decorator from LangSmith SDK to log function calls, capture inputs, outputs, and errors automatically.
 
 => How the decorator creates a trace run tree supporting asynchronous background logging without blocking main execution.
+
+Added and used a dummy vector database retriever for tracing demos
+What was learned in this process ?
+
+=> How to simulate a vector DB retriever for Retrieval-Augmented Generation (RAG) pipelines using a simple dummy class for testing.
+
+=> How such a retriever integrates within tracing to demonstrate end-to-end observability of data retrieval steps.
+
+ Incorporated metadata annotations and runtime metadata support
+ 
+What was learned in this process ?
+
+=> How to add static metadata in traced functions for richer context and enhanced filtering/grouping in the LangSmith dashboard.
+
+=> How to dynamically inject metadata at runtime within tracing to track additional execution details not known at design time.
+
