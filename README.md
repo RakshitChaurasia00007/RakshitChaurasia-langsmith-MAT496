@@ -126,3 +126,70 @@ Lesson 2 elaborates on practical implementation with multiple run types, illustr
 - Refined document retrieval example with detailed document metadata for better UI rendering in LangSmith.
 
 ---
+
+
+
+
+---
+
+## What We Have Learned in Lesson 3
+
+This lesson deep-dives into covering key concepts and practical implementations such as:
+
+- Understanding multiple run types (LLM, Retriever, Tool, Chain, Prompt, Parser) and their use in LangSmith tracing.
+- Setting up environment variables and tracing configurations correctly for seamless integration.
+- Using the `@traceable` decorator, trace context manager, and `wrap_openai` wrapper for flexible and granular tracing control.
+- Employing the RunTree API for manual, explicit trace creation enhancing observability.
+- Best coding practices for metadata addition, error handling, timing, and tracing hierarchy.
+- Integrating LangChain and LangGraph components with LangSmith tracing.
+- Handling both standard and streaming LLM responses for comprehensive trace visibility.
+- Using retriever runs and document metadata to improve trace render quality.
+- Combining tools with LLMs in chains to enrich trace workflows.
+
+---
+
+## What Were Some of the Commits which were Done During the Lesson
+
+- **Initial setup and environment variable configuration** enabling tracing with API keys and project context.
+- **LLM run examples** showing how to format inputs and outputs, and include required metadata.
+- **Streaming LLM runs** with reduce functions added for chunked output handling.
+- **Retriever run examples** introducing formatted document retrieval with rich metadata support.
+- **Tool call tracing improvements** incorporating function calls like weather fetching within the trace pipeline.
+- **RunTree API implementation** giving fine control over manual tracing, run hierarchies, and metadata.
+- **Wrap_openai wrapper usage** added to simplify trace logging in complex nested OpenAI calls.
+- **Context manager tracing** usage demonstrated for block-level trace control.
+- **Code polishing** with debug logs, error capturing, and enriched metadata injected in traces.
+
+---
+
+## What We Learned From These Commits
+
+From the commits, we learned:
+
+- The importance of precise environment setup and key configuration for automatic and manual tracing.
+- How metadata and input/output message structure greatly influence trace clarity in LangSmith.
+- The utility of streaming trace reducer functions for continuous outputs.
+- How retriever runs enhance tracing visibility for document-based models.
+- The effectiveness of combining LLMs and tools in a chained workflow for realistic applications.
+- The flexibility and power of the RunTree API for explicit trace object management.
+- Simplification of trace logging with the wrap_openai approach in complex systems.
+- The added control and debugging benefits offered by the trace context manager.
+- Best practices for maintaining trace consistency, dealing with errors, and timing.
+
+---
+
+## Tweaks and Modifications Done in the Updated Files
+
+- Added granular metadata fields such as `version`, `component`, and application tags to enhance trace filtering and context.
+- Split combined logic into finer-grained child runs like document formatting and model inference for better trace hierarchy.
+- Incorporated debug print statements inside core functions to aid live troubleshooting.
+- Wrapped OpenAI calls with try-except for robust error logging in traces.
+- Added timing measurements on OpenAI API calls to track performance within traces.
+- Parameterized models, temperature, and other inputs to increase flexibility and reuse.
+- Switched to context manager tracing for explicit block-level control in suitable cases.
+- Integrated usage of wrap_openai wrapper to reduce decorator boilerplate in nested calls.
+- Strengthened environment variable setup documentation and added alternatives (inline, .env).
+- Enhanced examples with LangGraph workflow visualizations showing data flow and integration.
+
+---
+
