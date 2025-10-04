@@ -34,3 +34,10 @@ What was learned in this process ?
 
 => How to dynamically inject metadata at runtime within tracing to track additional execution details not known at design time.
 
+Completed tracing pipeline and refined metadata usage
+What was learned in the process ?
+
+=> How to assemble a full traceable pipeline from retrieval through OpenAI completion and response generation, illustrating trace continuity.
+
+=> The importance of clarity and correctness in metadata handling to maximize trace data quality and usability during debugging or evaluation.
+
