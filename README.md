@@ -41,3 +41,23 @@ What was learned in the process ?
 
 => The importance of clarity and correctness in metadata handling to maximize trace data quality and usability during debugging or evaluation.
 
+Tweakings that were done for lesson 1 
+
+1. Added setup and configuration for environment variables required for tracing and OpenAI API usage.
+
+2. Introduced and applied the traceable decorator extensively to key functions to enable automated tracing of inputs, outputs, and errors.
+
+3. Implemented a simple dummy retriever class to simulate vector database retrieval within the tracing pipeline, allowing tracing of retrieval steps without external dependencies.
+
+4. Enhanced trace metadata use by introducing static metadata annotations on traced functions for richer context.
+
+5. Enabled dynamic runtime metadata injection into traces for improved observability during execution.
+
+6. Refined the flow and clarity of the tracing pipeline implementation, including better handling and documentation of metadata.
+
+7. Corrected minor code details to ensure accurate trace capture and metadata propagation across the pipeline.
+
+These changes improve the observability of the code execution through LangSmith’s tracing capabilities and demonstrate practical traceable pipeline setups.
+
+
+
