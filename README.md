@@ -126,7 +126,3 @@ Lesson 2 elaborates on practical implementation with multiple run types, illustr
 - Refined document retrieval example with detailed document metadata for better UI rendering in LangSmith.
 
 ---
-
-## Original File Note
-
-The original file remains unchanged as the base reference for Lesson 2 content.
