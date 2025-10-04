@@ -11,3 +11,10 @@ What was learned in this process ?
 => How to correctly configure environment variables required to enable LangSmith tracing and OpenAI API access.
 
 => Importance of setting LANGSMITH_TRACING and project keys for the LangSmith SDK to function.
+
+Implemented function tracing with traceable decorator
+What was learned in this process ?
+
+=> How to use the traceable decorator from LangSmith SDK to log function calls, capture inputs, outputs, and errors automatically.
+
+=> How the decorator creates a trace run tree supporting asynchronous background logging without blocking main execution.
