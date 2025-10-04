@@ -62,73 +62,71 @@ Learned to use LangSmith Python SDK for tracing, including setting environment v
 7. Corrected minor code details to ensure accurate trace capture and metadata propagation across the pipeline.
 
 These changes improve the observability of the code execution through LangSmith’s tracing capabilities and demonstrate practical traceable pipeline setups.
+# Lesson 2 - Types of Runs and LangSmith Tracing
 
-Lesson 2 
-Types of Runs Supported by LangSmith
+## Types of Runs Supported by LangSmith
 
-LLM: Invokes large language models; supports both standard and streaming modes.
+- **LLM**: Invokes large language models; supports both standard and streaming modes.
+- **Retriever**: Retrieves documents from sources like databases, indexers. Supports tracing of document retrieval steps.
+- **Tool**: Executes function calls, allowing for custom actions during a run.
+- **Chain**: Combines multiple runs (LLM, Retriever, Tool) into a larger pipeline for complex workflows.
+- **Prompt**: Hydrates prompts with structured context for LLMs.
+- **Parser**: Extracts structured data from responses and response chunks.
 
-Retriever: Retrieves documents from sources like databases, indexers. Supports tracing of document retrieval steps.
+## Setup and Environment Configuration
 
-Tool: Executes function calls, allowing for custom actions during a run.
+- How to correctly set API keys for OpenAI and LangSmith as environment variables (`OPENAI_API_KEY`, `LANGSMITH_API_KEY`) or via `.env` files using `dotenv`.
+- How to enable tracing globally with `LANGSMITH_TRACING="true"` and specify project name.
 
-Chain: Combines multiple runs (LLM, Retriever, Tool) into a larger pipeline for complex workflows.
+## Usage of Tracing for Different Runs
 
-Prompt: Hydrates prompts with structured context for LLMs.
+- **LLM**: How to trace chat-based models, with an example showing the input and output formats, including optional metadata (`ls_provider`, `ls_model_name`).
+- **Streaming LLM**: How to handle chunked responses with a `reduce_fn()` to assemble the final output; demonstrated with an example.
+- **Retriever**: How to trace document retrieval, return proper document objects (`page_content`, `type`, `metadata`) for proper visualization in traces.
+- **Tool Calls**: How to trace custom function calls, like fetching weather data, and how to correctly include API keys.
 
-Parser: Extracts structured data from responses and responses chunks.
+## Additional Learnings
 
-Setup and Environment Configuration:
+- Emphasis on how to format messages and responses for LangSmith tracing.
+- How to specify run types via decorator `@traceable(run_type="...")`.
+- How to inject metadata at the function or call level to improve trace clarity.
 
-How to correctly set API keys for OpenAI and LangSmith as environment variables (OPENAI_API_KEY, LANGSMITH_API_KEY) or via .env files using dotenv.
+## Summary
 
-How to enable tracing globally with LANGSMITH_TRACING="true" and specifying project name.
-
-Usage of Tracing for Different Runs:
-
-LLM: How to trace chat-based models, with an example showing the input and output formats, including optional metadata (ls_provider, ls_model_name).
-
-Streaming LLM: How to handle chunked responses with a reduce_fn() to assemble the final output; demonstrated with an example.
-
-Retriever: How to trace document retrieval, return proper document objects (page_content, type, metadata) for proper visualization in traces.
-
-Tool Calls: How to trace custom function calls, like fetching weather data, and how to correctly include API keys.
-
-Additional Learnings
-
-Emphasis on how to format messages and responses for LangSmith tracing.
-
-How to specify run types via decorator @traceable(run_type="...").
-
-How to inject metadata at the function or call level to improve trace clarity.
-
-To Summarize our Learning in Crisp
 Lesson 2 elaborates on practical implementation with multiple run types, illustrating the design choices and setup steps needed for comprehensive tracing coverage across different components of an LLM-powered application, emphasizing the importance of correct API key setup, metadata usage, and handling both streaming and non-streaming processes.
 
---
+---
 
-feat: initial setup and environment configuration for tracing
+## Commit Messages for Lesson 2
 
-Learned how to configure API keys, enable LangSmith tracing, and specify project context using environment variables and dotenv files.
+- **feat: initial setup and environment configuration for tracing**  
+  Learned how to configure API keys, enable LangSmith tracing, and specify project context using environment variables and dotenv files.
 
-feat: added LLM run example with proper message formatting and metadata
+- **feat: added LLM run example with proper message formatting and metadata**  
+  Explored how to trace chat LLM runs with examples showing structured input/output formats and metadata fields such as model name and provider.
 
-Explored how to trace chat LLM runs with examples showing structured input/output formats and metadata fields such as model name and provider.
+- **feat: implemented streaming LLM run with reduce function**  
+  Learned to handle streaming LLM responses, reduce partial chunks into final output, and trace streaming interactions effectively.
 
-feat: implemented streaming LLM run with reduce function
+- **feat: added retriever run example with document format and metadata**  
+  Added tracing for document retrieval using retriever runs, demonstrated how to return documents with text content and metadata for better trace visualization.
 
-Learned to handle streaming LLM responses, reduce partial chunks into final output, and trace streaming interactions effectively.
+- **feat: incorporated tool call tracing with weather example**  
+  Extended tool call tracing with a practical weather-fetching example, combined it with LLM calls, enhanced examples with environment variable setup.
 
-feat: added retriever run example with document format and metadata
+---
 
-Added tracing for document retrieval using retriever runs, demonstrated how to return documents with text content and metadata for better trace visualization.
+## Tweak Summary for Lesson 2
 
-feat: incorporated tool call tracing with weather example
+- Added extensive run type examples covering LLM, streaming LLM, Retriever, and Tool types for comprehensive tracing.
+- Improved documentation and comments explaining required input/output formats for each run type.
+- Included sample metadata fields such as `ls_provider` and `ls_model_name` for richer trace context.
+- Enhanced environment setup instructions for API keys and tracing enablement.
+- Added reduce function example to showcase handling of streaming data in traces.
+- Refined document retrieval example with detailed document metadata for better UI rendering in LangSmith.
 
-Extended tool call tracing with a practical weather-fetching example, combined it with LLM calls, enhanced examples with environment variable setup.
+---
 
+## Original File Note
 
-
-
-
-
+The original file remains unchanged as the base reference for Lesson 2 content.
