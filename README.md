@@ -105,6 +105,30 @@ How to inject metadata at the function or call level to improve trace clarity.
 To Summarize our Learning in Crisp
 Lesson 2 elaborates on practical implementation with multiple run types, illustrating the design choices and setup steps needed for comprehensive tracing coverage across different components of an LLM-powered application, emphasizing the importance of correct API key setup, metadata usage, and handling both streaming and non-streaming processes.
 
+--
+
+feat: initial setup and environment configuration for tracing
+
+Learned how to configure API keys, enable LangSmith tracing, and specify project context using environment variables and dotenv files.
+
+feat: added LLM run example with proper message formatting and metadata
+
+Explored how to trace chat LLM runs with examples showing structured input/output formats and metadata fields such as model name and provider.
+
+feat: implemented streaming LLM run with reduce function
+
+Learned to handle streaming LLM responses, reduce partial chunks into final output, and trace streaming interactions effectively.
+
+feat: added retriever run example with document format and metadata
+
+Added tracing for document retrieval using retriever runs, demonstrated how to return documents with text content and metadata for better trace visualization.
+
+feat: incorporated tool call tracing with weather example
+
+Extended tool call tracing with a practical weather-fetching example, combined it with LLM calls, enhanced examples with environment variable setup.
+
+
+
 
 
 
