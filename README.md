@@ -245,6 +245,122 @@ This lesson introduces the concept of conversational threads in LangSmith tracin
 
 ---
 
+# Module 2: Tracing and Run Types with LangSmith
 
+---
 
+## What We Have Learned in Module 2
 
+Module 2 covers the core concepts and practical implementations of tracing in LangSmith, focusing on multiple types of runs and their integration into AI applications:
+
+- LangSmith supports various **run types** including LLM, Retriever, Tool, Chain, Prompt, and Parser, each serving different functional roles in trace logging.
+- Setup of environment variables (`OPENAI_API_KEY`, `LANGSMITH_API_KEY`, `LANGSMITH_TRACING`, `LANGSMITH_PROJECT`) is crucial for enabling and directing LangSmith traces.
+- Clearly structured inputs and outputs, especially for chat-based LLM models, ensure accurate and insightful traces.
+- Handling **streaming LLM runs** by implementing reducer functions allows aggregation of chunked outputs for seamless trace viewing.
+- Document retrieval steps as **Retriever runs** enable tracking of knowledge fetch and data sourcing.
+- Use of **Tool runs** encapsulates external function calls, enriching trace logs with real-world actions.
+- Combining these runs into **Chains** creates complex, composable pipelines with traceable sub-processes.
+- Metadata injection (`ls_provider`, `ls_model_name`, and custom tags) plays a critical role in providing context and fine-grained trace filtering.
+- Debugging and performance insights are enhanced with added logging and timing around critical function calls.
+- Practical examples demonstrate integrated usage of decorators, wrappers (`wrap_openai`), and manual tracing APIs (`RunTree`) to cover diverse tracing needs.
+- Tracing conversational threads is achieved by propagating unique thread/session IDs as metadata, linking traces logically per conversation.
+- The power of LangSmith lies in flexible instrumentation—from easy decorator-based tracing to full manual control with RunTree API.
+
+---
+
+## Commit from Module 2
+
+- Configured environment for seamless tracing and project organization.
+- Added tracing to LLM chat functions with proper message formatting and metadata.
+- Implemented streaming trace reduction to manage partial LLM outputs.
+- Developed Retriever examples to capture document fetches with detailed metadata.
+- Extended tracing to Tool function calls, demonstrating with weather API call integration.
+- Introduced manual RunTree API usage for explicit and hierarchical trace management.
+- Integrated wrap_openai wrapper for automatic and minimal decorator tracing.
+- Built conversational threading with UUID-based metadata propagation for cohesive trace grouping.
+- Enhanced code with debug prints, error catching, and metadata enrichment across calls.
+
+---
+
+## Learning from Commit 
+
+Through these commits, the module revealed:
+
+- The importance of precise environment configuration for effective trace capture.
+- Mechanisms to trace diverse AI pipeline components including models, data retrieval, and tools.
+- How streaming and chunked responses can be merged for cohesive trace logs.
+- Benefits of hierarchical child runs for detailed trace visualization and troubleshooting.
+- The flexibility to switch between automated and manual tracing depending on application needs.
+- Techniques to maintain contextual linkage via thread or session metadata, improving trace correlation.
+- Practical coding best practices to ensure trace robustness and observability.
+
+---
+
+## Tweaks and Enhancements 
+
+- Enriched examples with additional metadata for more informative traces.
+- Segmented complex logic into granular traceable child runs for better trace breakdown.
+- Incorporated timing information and error handling into traced functions.
+- Added console debug outputs to verify tracing flow during development.
+- Parameterized critical input variables for flexible experimentations.
+- Documented environment variable usage and recommended multiple setup methods.
+- Included examples demonstrating trace context management and alternative wrapping techniques.
+- Enabled demonstration of conversational thread linking using UUID metadata propagation.
+
+---
+
+# Module 2: Testing & Evaluation with LangSmith
+
+---
+
+## What We Have Learned in Module 2
+
+Module 2 focuses on the capabilities of LangSmith related to **testing and evaluation** of LLM applications, delivering essential tools for quality assurance and performance monitoring:
+
+- LangSmith supports creating datasets of **inputs and reference outputs** to facilitate rigorous testing of LLM applications.
+- It enables a **test-driven approach** by allowing bulk uploads, manual creation, and exporting of test cases derived from application traces.
+- Custom evaluation methods let users **score test results**, integrating seamlessly into development workflows.
+- Both **online evaluation** (sampling runs from production for evaluation with custom or LLM-based judges) and **offline evaluation** (using managed datasets to run batch or automated tests) are supported.
+- LangSmith facilitates capturing **model fine-tuning and training data** by tracing deployment runs and converting traces into training datasets.
+- Supports comprehensive **agent evaluation** techniques including final response assessment, step-wise evaluation, and tool call trajectory analysis.
+- Provides APIs to **create user feedback**, linking feedback directly to runs with options for scoring and comments.
+- Overall, LangSmith extends the observability and quality control of LLM apps beyond tracing into proactive testing and adaptive evaluation.
+
+---
+
+## What Were Some of the Commits Done During the Module
+
+- Developed functions to upload and manage structured datasets for testing.
+- Added APIs for creating and scoring dataset examples in bulk.
+- Added detailed examples of online and offline evaluation workflows.
+- Integrated feedback collection functionality linked to specific runs.
+- Established trace-to-training data conversion patterns for model fine-tuning.
+- Improved documentation and code comments to clarify testing capabilities and workflows.
+- Enhanced error handling and metadata usage across test and evaluation functions.
+- Created examples covering evaluation of LLM agents, including stepwise and trajectory evaluation.
+
+---
+
+## What We Learned From These Commits
+
+- The importance of standardized dataset management for reproducible testing.
+- How online and offline evaluations complement each other to form a complete quality assurance pipeline.
+- User feedback integration provides critical human-in-the-loop validation for models.
+- Linking test cases, traces, and training data enriches the iterative improvement cycle.
+- Effective use of metadata improves traceability of test runs and evaluation results.
+- Modular API design enables flexible, customizable evaluation strategies fitting diverse workflows.
+
+---
+
+## Tweaks and Modifications 
+
+- Extended example datasets with rich metadata and standardized schemas.
+- Added metadata-enhanced bulk upload functions to improve dataset creation and management.
+- Improved feedback creation methods with clearer parameterization and usage examples.
+- Streamlined online evaluation examples to dynamically sample production runs and use custom judges.
+- Created offline evaluation guides with dataset handling, automated scoring, and export capabilities.
+- Added comprehensive commenting and inline documentation for better onboarding.
+- Improved error handling robustness and input validation.
+- Illustrated agent evaluation methods with detailed test scenarios and evaluation metrics.
+
+---
