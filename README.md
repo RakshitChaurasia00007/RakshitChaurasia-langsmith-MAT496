@@ -264,39 +264,38 @@ In this lesson, we learned how to programmatically create and manage datasets in
 
 ---
 
-## What Were Some of the Commits Done During the Module
+## What Were Some of the Commits Done During the Lesson
 
-- Developed functions to upload and manage structured datasets for testing.
-- Added APIs for creating and scoring dataset examples in bulk.
-- Added detailed examples of online and offline evaluation workflows.
-- Integrated feedback collection functionality linked to specific runs.
-- Established trace-to-training data conversion patterns for model fine-tuning.
-- Improved documentation and code comments to clarify testing capabilities and workflows.
-- Enhanced error handling and metadata usage across test and evaluation functions.
-- Created examples covering evaluation of LLM agents, including stepwise and trajectory evaluation.
+- Added environment setup with dotenv support and inline variable setting.
+- Created example input-output pairs reflecting plausible RAG application queries and responses.
+- Implemented batch creation of examples via the LangSmith SDK.
+- Enhanced code with detailed inline comments and robust error handling.
+- Polished metadata usage for both inputs and outputs.
+- Added explicit dataset ID usage and validation in the upload process.
+- Provided demonstration of using the dataset for downstream testing pipelines.
 
 ---
-
 ## What We Learned From These Commits
 
-- The importance of standardized dataset management for reproducible testing.
-- How online and offline evaluations complement each other to form a complete quality assurance pipeline.
-- User feedback integration provides critical human-in-the-loop validation for models.
-- Linking test cases, traces, and training data enriches the iterative improvement cycle.
-- Effective use of metadata improves traceability of test runs and evaluation results.
-- Modular API design enables flexible, customizable evaluation strategies fitting diverse workflows.
+- SDK-based dataset creation greatly improves workflow automation and scalability.
+- Adhering to data schema (question as input, output as response) ensures LangSmith compatibility.
+- Managing API keys and environment settings correctly is essential for authentication in API calls.
+- Bulk upload reduces manual overhead when dealing with large example sets.
+- Proper dataset identification and management prevents upload errors and improves organization.
+- Metadata enhances dataset documentation, enabling better trace filtering and analysis.
+- Including relevant comments and logical structuring facilitates easier maintenance and onboarding.
 
 ---
 
-## Tweaks and Modifications 
+## Tweaks and Modifications
 
-- Extended example datasets with rich metadata and standardized schemas.
-- Added metadata-enhanced bulk upload functions to improve dataset creation and management.
-- Improved feedback creation methods with clearer parameterization and usage examples.
-- Streamlined online evaluation examples to dynamically sample production runs and use custom judges.
-- Created offline evaluation guides with dataset handling, automated scoring, and export capabilities.
-- Added comprehensive commenting and inline documentation for better onboarding.
-- Improved error handling robustness and input validation.
-- Illustrated agent evaluation methods with detailed test scenarios and evaluation metrics.
+- Added separation of environment var configurations and `.env` usage for flexibility.
+- Incorporated richer example questions and customized answers deviating from samples to highlight originality.
+- Improved metadata injection in example creation to boost trace and dataset interpretability.
+- Structured input-output preparation for clarity and LangSmith compliance.
+- Enhanced comments explaining dataset ID importance and upload prerequisites.
+- Extended error handling to cover common authentication and data validity issues.
+- Streamlined code to improve readability and ease of future updates.
+- Demonstrated better practices with concrete code snippets for dataset upload workflows.
 
 ---
