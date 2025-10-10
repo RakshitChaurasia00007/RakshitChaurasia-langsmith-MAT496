@@ -245,22 +245,22 @@ This lesson introduces the concept of conversational threads in LangSmith tracin
 
 ---
 
-# Module 2: Testing & Evaluation with LangSmith
+# Module 2 Lesson 1: Testing & Evaluation – Dataset Upload with LangSmith SDK
 
 ---
 
-## What We Have Learned in Module 2
+## What We Have Learned in the Lesson 1
 
-Module 2 focuses on the capabilities of LangSmith related to **testing and evaluation** of LLM applications, delivering essential tools for quality assurance and performance monitoring:
+In this lesson, we learned how to programmatically create and manage datasets in LangSmith using the SDK, supplementing the manual UI approaches. Key points include:
 
-- LangSmith supports creating datasets of **inputs and reference outputs** to facilitate rigorous testing of LLM applications.
-- It enables a **test-driven approach** by allowing bulk uploads, manual creation, and exporting of test cases derived from application traces.
-- Custom evaluation methods let users **score test results**, integrating seamlessly into development workflows.
-- Both **online evaluation** (sampling runs from production for evaluation with custom or LLM-based judges) and **offline evaluation** (using managed datasets to run batch or automated tests) are supported.
-- LangSmith facilitates capturing **model fine-tuning and training data** by tracing deployment runs and converting traces into training datasets.
-- Supports comprehensive **agent evaluation** techniques including final response assessment, step-wise evaluation, and tool call trajectory analysis.
-- Provides APIs to **create user feedback**, linking feedback directly to runs with options for scoring and comments.
-- Overall, LangSmith extends the observability and quality control of LLM apps beyond tracing into proactive testing and adaptive evaluation.
+- Understanding the importance of structured datasets of input-output pairs for rigorous LLM testing.
+- How to prepare example data derived from retrieval-augmented generation (RAG) or similar systems.
+- Setting the necessary environment variables (`OPENAI_API_KEY`, `LANGSMITH_API_KEY`, `LANGSMITH_TRACING`, `LANGSMITH_PROJECT`) for authentication and tracing enablement.
+- Loading environment variables from `.env` files versus inline setup.
+- How to use the LangSmith Client to perform bulk upload of examples into a specific dataset via `client.create_examples`.
+- The requirement for a valid dataset ID for successful uploads.
+- Best practices for dataset construction reflecting real-world test cases.
+- Importance of metadata for enhanced traceability and dataset management.
 
 ---
 
