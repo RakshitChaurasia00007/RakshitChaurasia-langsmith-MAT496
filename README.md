@@ -303,5 +303,12 @@ In this lesson, we learned how to programmatically create and manage datasets in
 ##  Module 3 Lesson 1 Begins 
 
 ## What have we learned in the Video of the LESSON 1 ?
+- We have learned about the functionality of Langsmith playground.
+- We can use the playground to check on the LLM prompts.
+- We have also learned how we can run experiments on the datasets from the playground which can be very useful to test the single step of our application.
+
+## Experiments & Comparisions of Different LLM's using DATASET
+(More llike exploring the playground section of the LANGSMITH)
+Below are the screenshots of how I have completly explored LANGSMITH PLAYGROUND .
 
 
