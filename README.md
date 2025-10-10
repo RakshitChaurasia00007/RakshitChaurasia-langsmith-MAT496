@@ -301,3 +301,7 @@ In this lesson, we learned how to programmatically create and manage datasets in
 ---
 
 ##  Module 3 Lesson 1 Begins 
+
+## What have we learned in the Video of the LESSON 1 ?
+
+
