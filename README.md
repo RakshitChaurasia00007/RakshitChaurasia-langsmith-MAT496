@@ -311,4 +311,7 @@ In this lesson, we learned how to programmatically create and manage datasets in
 (More llike exploring the playground section of the LANGSMITH)
 Below are the screenshots of how I have completly explored LANGSMITH PLAYGROUND .
 
+Screenshot 1 the below screenshot shows us the dataset which was created in my langsmith playground due to modifications in the file 
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/9306de1a-1e7f-4461-8a96-7c43c0204a32" />
+
 
