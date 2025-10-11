@@ -314,4 +314,12 @@ Below are the screenshots of how I have completly explored LANGSMITH PLAYGROUND 
 Screenshot 1 the below screenshot shows us the dataset which was created in my langsmith playground due to modifications in the file 
 <img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/9306de1a-1e7f-4461-8a96-7c43c0204a32" />
 
+Screenshot 2 When system is being asked to give output as a normal chatbot only 
+<img width="1358" height="607" alt="image" src="https://github.com/user-attachments/assets/1c3918d5-d489-4685-ba5d-cd064fbe7518" />
+
+Screenshot 3 when system is asked for being a professional lifestyle changer in 20's the response automatically changes .
+<img width="1366" height="605" alt="image" src="https://github.com/user-attachments/assets/8367c012-fa6b-436f-bde4-1836271f480b" />
+
+
+
 
