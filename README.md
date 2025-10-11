@@ -320,6 +320,13 @@ Screenshot 2 When system is being asked to give output as a normal chatbot only
 Screenshot 3 when system is asked for being a professional lifestyle changer in 20's the response automatically changes .
 <img width="1366" height="605" alt="image" src="https://github.com/user-attachments/assets/8367c012-fa6b-436f-bde4-1836271f480b" />
 
+Below is screenshot for runnable sequence data 1
+<img width="1366" height="646" alt="image" src="https://github.com/user-attachments/assets/bd2d2cfa-b6cc-4296-a156-a36bb08d1877" />
+Screenshot of runnable sequence data 2
+<img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/477b731b-a08d-4a3a-a3ae-8508c7ab1334" />
+
+
+
 
 
 
