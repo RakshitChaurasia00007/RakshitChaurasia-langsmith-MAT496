@@ -330,6 +330,9 @@ We can also change the temprature, Max Tokens , Frequency Penalty , Reasoning Ef
 
 <img width="1366" height="648" alt="image" src="https://github.com/user-attachments/assets/70f77205-71bd-47f7-8285-8f9d6b505ac9" />
 
+Now there will be screenshot regarding comparision of output using different LLM models In one side we have O4-mini & O1-mini 
+<img width="1366" height="606" alt="image" src="https://github.com/user-attachments/assets/961c05de-eb6b-413f-b6ba-271e80b93748" />
+In the above screenshot we can see O4-MINI is more practical & energetic and O1-MINI is structured & thoughtful hence user can use the model according to their prefrences.
 
 
 
