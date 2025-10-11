@@ -354,7 +354,14 @@ Now our Second screenshot is about how the dataset will looklike when we will ru
 Earlier our system prompt was just "You are a chatbot"  But now our system prompt is "You are a chatbot and you have to keep your answers short to 2-3 words that's all."
 <img width="1366" height="645" alt="image" src="https://github.com/user-attachments/assets/09f59330-1893-4213-b138-70cdc9baca04" />
 
+## Module 3 Lesson 2 Begins
 
+## What we have learned in the Lessons of Video 2
+   We learned how we can save our prompts in the prompt template. 
+   These saved prompts include list of templated messages & optional model configuration and also optionally constructed output.
+   We can pull these prompts directly in our code and also push these prompts up from our code into SDK.
+
+## Hence Now we will Begin our Work According to lesson 2 Video 
 
 
 
