@@ -325,6 +325,12 @@ Below is screenshot for runnable sequence data 1
 Screenshot of runnable sequence data 2
 <img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/477b731b-a08d-4a3a-a3ae-8508c7ab1334" />
 
+Below we have the screenshot of the location from where we can change the service provider , model like which LLM model do you wanna use .
+We can also change the temprature, Max Tokens , Frequency Penalty , Reasoning Effort where temprature is for controling the creativity , max output token is like the maximum length of the model's response, frequency penalty is like the process of reducing the words which are repeated in our response, reasonning effort is like how much a model is trying to think deeply .
+
+<img width="1366" height="648" alt="image" src="https://github.com/user-attachments/assets/70f77205-71bd-47f7-8285-8f9d6b505ac9" />
+
+
 
 
 
