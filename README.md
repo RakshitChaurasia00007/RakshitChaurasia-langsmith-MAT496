@@ -345,6 +345,21 @@ Below is the return with 1 response using output schema and it must match with t
 
 <img width="1363" height="609" alt="image" src="https://github.com/user-attachments/assets/8270d3c2-1402-43e3-b3de-6a91e72ff930" />
 
+Now below I will attach the screenshot to show how Tabular view of our whole dataset looklike without running the LLM and after running the LLM on gpt O-4-MINI
+First screenshot is about hoiw our dataset looks without running it on any LLM model .
+<img width="1362" height="651" alt="image" src="https://github.com/user-attachments/assets/53b92808-aba0-4596-9139-9b7a66920128" />
+Now our Second screenshot is about how the dataset will looklike when we will run it on GPT o-4-MINI having system prompt as "You are a chatbot "
+<img width="1366" height="650" alt="image" src="https://github.com/user-attachments/assets/ff356a6a-7451-4eaf-8cda-1385c5742e03" />
+## Now I will adjust the system prompt a bit by writinning 
+Earlier our system prompt was just "You are a chatbot"  But now our system prompt is "You are a chatbot and you have to keep your answers short to 2-3 words that's all."
+<img width="1366" height="645" alt="image" src="https://github.com/user-attachments/assets/09f59330-1893-4213-b138-70cdc9baca04" />
+
+
+
+
+
+
+
 
 
 
