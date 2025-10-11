@@ -334,6 +334,22 @@ Now there will be screenshot regarding comparision of output using different LLM
 <img width="1366" height="606" alt="image" src="https://github.com/user-attachments/assets/961c05de-eb6b-413f-b6ba-271e80b93748" />
 In the above screenshot we can see O4-MINI is more practical & energetic and O1-MINI is structured & thoughtful hence user can use the model according to their prefrences.
 
+--
+If we disable streaming we can run it with repititions.Repititions are usefule for consistency  and double check that we are able to respond towards a question correctly everytime.It is very useful when we have very high temprature. In the below screenshot by increasing repitition we have received 2 reponses for the same prompt.
+<img width="1347" height="606" alt="image" src="https://github.com/user-attachments/assets/f2fc47fd-b4be-468c-bb55-f4a70e58254c" />
+
+<img width="1366" height="650" alt="image" src="https://github.com/user-attachments/assets/a6554790-4610-4898-93ba-18679a77a5c7" />
+The above screenshot show addition of schema in our process with description ,correctness strict & required string
+<img width="1366" height="650" alt="image" src="https://github.com/user-attachments/assets/0328d9df-403f-4501-8094-c0cd5d165a53" />
+Below is the return with 1 response using output schema and it must match with the function definition.
+
+<img width="1363" height="609" alt="image" src="https://github.com/user-attachments/assets/8270d3c2-1402-43e3-b3de-6a91e72ff930" />
+
+
+
+
+
+
 
 
 
